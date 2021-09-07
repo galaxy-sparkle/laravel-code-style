@@ -5,6 +5,7 @@ use PhpCsFixer\Finder;
 
 $rules = [
     'array_syntax' => ['syntax' => 'short'],
+    'no_unused_imports' => true,
     'binary_operator_spaces' => [
         'default' => 'single_space',
         'operators' => ['=>' => null]

@@ -5,6 +5,7 @@ use PhpCsFixer\Config;
 
 $rules = [
     'array_syntax' => ['syntax' => 'short'],
+    'no_unused_imports' => true,
     'blank_line_after_namespace' => true,
     'blank_line_after_opening_tag' => true,
     'braces' => true,
@@ -162,5 +163,5 @@ $finder = Finder::create()
 
 return (new Config())->setFinder($finder)
                      ->setRules($rules)
-                     ->setRiskyAllowed(true)
+                     ->setRiskyAllowed(false)
                      ->setUsingCache(true);
